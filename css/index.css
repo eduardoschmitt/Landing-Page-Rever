@@ -108,7 +108,7 @@ body{
 .sobre-plataforma {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-image: url(../imagens/paper-green-white.jpg);
+    background-image: url(../imagens/paper-white-green.jpg);
     background-size: cover;
     height: 100vh;
 }
@@ -235,6 +235,7 @@ body{
 
 .servicos {
     padding: 100px 0;
+    font-size: 3vh;
     background-color: white;
     background-size: cover;
     height: 90vh;
@@ -281,7 +282,7 @@ body{
     .titulo-servico {
         text-align: center;
         font-size: 25px;
-        padding: 0 0 50px 0;
+        padding: 0 10px 50px 10pxs;
         color: rgb(25, 121, 46);
     }
     
@@ -324,6 +325,7 @@ body{
 }
 
 .parceiros-lista div p{
+    font-size: 3vh;
     color: rgb(25, 121, 46);
     text-align: center;
 }
@@ -344,7 +346,7 @@ body{
 @media screen and (min-width: 0px) and (max-width: 500px) {
     
     .parceiros-lista div{
-        padding: 0 0 120px 0;
+        padding: 0 0 40px 0;
     }
 
     .parceiros-lista {
@@ -364,6 +366,10 @@ body{
 }
 
 /* Contato */
+.contato section h1{
+    padding: 50px 0 40px 0;
+}
+
 .contato-divisao{
     display: grid;
     place-items: center;
@@ -401,8 +407,54 @@ body{
 
 /* Rodapé */
 footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
     background-color: rgb(25, 121, 46);
+    background: linear-gradient(90deg, rgba(25,121,46,1) 0%, rgba(25,121,46,1) 35%, rgba(20,182,56,1) 100%);
+    /* background-image: url(../imagens/green-paper.jpg); */
+    background-size: cover;
+    border-radius: 100px 0 0 0;  
     color: white;
     text-align: center;
+    padding: 40px;
+}
+
+.footer-social{
     padding: 10px;
+}
+
+.footer-social a img{
+    height: 5vh;
+    padding: 0 5px;
+}
+
+.footer-logo{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.footer-logo img{
+    height: 8vh;
+}
+
+
+@media screen and (max-width: 1150px){
+
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer section {
+        padding: 25px;
+    }
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+
 }
