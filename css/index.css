@@ -307,6 +307,72 @@ body{
 
 }
 
+/* Benefícios */
+.beneficios{
+    background-image: url(../imagens/green-paper.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.beneficios-titulo{
+    display: grid;
+    place-items: center;
+    padding: 50px 0 0 0;
+}
+
+.beneficios-titulo-img{
+    display: inline-flex;
+}
+
+.beneficios-titulo-img img{
+    height: 10vh;
+}
+
+.beneficios-titulo-img h1{
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 8vh;
+}
+
+.beneficios-processo{
+    padding: 100px 0 0 0;
+    display: grid;
+    place-items: center;
+    color: white;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1000px){
+    .beneficios{
+        margin: 200px 0 0 0;
+    }
+}
+
+/* Gestão dos Reciclados*/
+.reciclados section{
+    display: grid;
+    place-items: center;
+}
+
+.reciclados section img{
+    height: 75vh;
+    padding: 0 0 100px 0;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1000px){
+    .reciclados section img{
+        height: 55vh;
+        padding: 0 0 100px 0;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px){
+    .reciclados section img{
+        height: 35vh;
+        padding: 0 0 100px 0;
+    }
+}
+
 /* Parceiros */
 .parceiros-lista{
     display: grid;
@@ -366,43 +432,13 @@ body{
 }
 
 /* Contato */
-.contato section h1{
-    padding: 50px 0 40px 0;
-}
-
 .contato-divisao{
     display: grid;
     place-items: center;
-    grid-template-columns: 1fr 1fr;
-}
-
-.contato-divisao p{
-    padding: 0 0 10px 0;
 }
 
 .contato-divisao img{
-    height: 15vh;
-    padding: 0 0 50px 0;
-}
-
-@media screen and (min-width: 0px) and (max-width: 600px){
-    .contato-divisao{
-        grid-template-columns: 1fr;
-    }
-
-    .contato-divisao p{
-        text-align: center;
-    }
-
-    .contato-divisao img{
-        height: 5vh;
-    }
-}
-
-@media screen and (min-width: 0px) and (max-width: 300px){
-    .contato-divisao p{
-        font-size: 10px;
-    }
+    height: 10vh;
 }
 
 /* Rodapé */
@@ -418,6 +454,17 @@ footer {
     color: white;
     text-align: center;
     padding: 40px;
+}
+
+.links-uteis a{
+    text-decoration: none;
+    color: White;
+    transition: 0.5s;
+}
+
+.links-uteis a:hover{
+    transition: 0.5s;
+    color: rgb(92, 255, 146);
 }
 
 .footer-social{
