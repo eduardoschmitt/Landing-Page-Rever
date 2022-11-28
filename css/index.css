@@ -336,10 +336,14 @@ body{
 }
 
 .beneficios-processo{
-    padding: 100px 0 0 0;
+    padding: 20px 0 0 0;
     display: grid;
     place-items: center;
     color: white;
+}
+
+.planet{
+    width: 100vh;
 }
 
 @media screen and (min-width: 0px) and (max-width: 1650px){
@@ -351,7 +355,6 @@ body{
 @media screen and (min-width: 0px) and (max-width: 1000px){
     .beneficios{
         margin: 200px 0 0 0;
-
     }
 
     .beneficios-titulo-img h1{
@@ -359,6 +362,45 @@ body{
         padding: 0 10px 50px 10pxs;
     }
 
+    .planet{
+        width: 70vh;
+    }
+
+}
+
+@media screen and (max-width: 650px){
+
+    .beneficios{
+        height: 60vh;
+    }
+
+    .planet{
+        width: 40vh;
+    }
+
+    .beneficios-titulo-img img{
+        height: 5vh;
+    }
+
+    .beneficios-titulo-img h1{
+        font-size: 15px;
+        padding: 0 10px 50px 10px;
+    }
+
+    .beneficios-processo div h2{
+        font-size: 12px;
+    }
+
+    .beneficios-processo div ul li{
+        font-size: 10px;
+    }    
+
+}
+
+@media screen and (max-width: 400px){
+    .planet{
+        width: 20vh;
+    }
 }
 
 /* Gestão dos Reciclados*/
@@ -389,6 +431,13 @@ body{
 @media screen and (max-width: 400px){
     .reciclados section img{
         height: 20vh;
+        padding: 0 0 100px 0;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .reciclados section img{
+        height: 10vh;
         padding: 0 0 100px 0;
     }
 }
